@@ -14,38 +14,7 @@ export const TabBar = ({ activeTab, onTabClick }) => {
             All
           </button>
         </div>
-        <div className='beforactive'>
-          <button
-            className={
-              activeTab === 'App Design' ? 'activeTab-btn shadow' : 'Tab-btn'
-            }
-            onClick={() => onTabClick('App Design')}
-          >
-            App Design
-          </button>
-        </div>
-        <div className='beforactive'>
-          <button
-            className={
-              activeTab === 'Web Design' ? 'activeTab-btn shadow' : 'Tab-btn'
-            }
-            onClick={() => onTabClick('Web Design')}
-          >
-            Web Design
-          </button>
-        </div>
-        <div className='beforactive'>
-          <button
-            className={
-              activeTab === 'Graphic Design'
-                ? 'activeTab-btn shadow'
-                : 'Tab-btn'
-            }
-            onClick={() => onTabClick('Graphic Design')}
-          >
-            Graphic Design
-          </button>
-        </div>
+    
         <div className='beforactive'>
           <button
             className={

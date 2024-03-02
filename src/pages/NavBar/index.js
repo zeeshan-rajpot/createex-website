@@ -70,16 +70,7 @@ const Index = ({ pageTitle, PageName }) => {
                 Team
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/Client"
-                style={({ isActive }) => ({
-                  color: isActive ? "#72b63c" : "#444444",
-                })}
-              >
-                Client
-              </NavLink>
-            </li>
+       
             <li>
               <NavLink
                 to="/About"

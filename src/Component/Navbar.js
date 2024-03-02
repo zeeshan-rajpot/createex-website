@@ -72,11 +72,7 @@ const Navbar = () => {
                   Team
                 </a>
               </li>
-              <li>
-                <a href="#client" onClick={handleNavLinkClickClient}>
-                  Client
-                </a>
-              </li>
+            
               <li>
                 <NavLink
                   to="/About"

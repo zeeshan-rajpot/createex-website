@@ -27,9 +27,9 @@ export const Index = () => {
         <CustomTab activeTab={activeTab} onTabClick={handleTabClick} />
 
         {activeTab === 'All' && <All />}
-        {activeTab === 'App Design' && <AppDesign />}
+        {/* {activeTab === 'App Design' && <AppDesign />}
         {activeTab === 'Web Design' && <WebDesign />}
-        {activeTab === 'Graphic Design' && <GraphicDesign />}
+        {activeTab === 'Graphic Design' && <GraphicDesign />} */}
         {activeTab === 'App Development' && <AppDevelopment />}
         {activeTab === 'Web Development' && <WebDevelopment />}
       </Container>

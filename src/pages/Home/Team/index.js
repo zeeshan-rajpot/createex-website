@@ -8,6 +8,7 @@ import person2 from "../../../SVG/PNG/Team2.jpg";
 import person3 from "../../../SVG/PNG/Team3.jpg";
 import person4 from "../../../SVG/PNG/Team4.jpg";
 import Carousel from "./Carousel/CarousalTeam";
+import TeamCard from "./TeamCard/teamCard";
 
 const Index = () => {
   const teamMembers = [
@@ -21,13 +22,13 @@ const Index = () => {
       id: 2,
       title: "Web Developer",
       subtitle: "React Js",
-      image: person2,
+      image: '03 (1).jpg',
     },
     {
       id: 3,
       title: "Web Developer",
       subtitle: "React Js",
-      image: person3,
+      image:{person1},
     },
     {
       id: 4,
@@ -71,9 +72,11 @@ const Index = () => {
               marginTop: "10px",
             }}
           >
-            <Col>
-              <Carousel teamMembers={teamMembers} />
-            </Col>
+                
+        <TeamCard
+teamMembers={teamMembers}
+        />
+      
           </Row>
         </Container>
       </div>

@@ -1,54 +1,132 @@
 import React from "react";
 import PortfolioCard from "../Card/portfoliotabcard.js";
 import { Container, Row, Col } from "react-bootstrap";
-import Mobile from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/Free_Iphone_13_Pro_Mockup_1.jpg";
-import Mobile1 from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/Free Phone 14 Pro Mockup.jpg";
-import Mobile2 from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/Free_Iphone_13_Pro_Mockup_2.jpg";
-import Mobile3 from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/Free_Iphone_13_Pro_Mockup_3.jpg";
-import Mobile4 from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/Free_Iphone_13_Pro_Mockup_3.jpg";
-import Mobile5 from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/566.png";
-import Mobile6 from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/ccc.png";
-import Mobile7 from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/ddd.jpg";
-import Mobile8 from "../../../SVG/Subpages/PortfolioCard/New folder/New folder/efv.png";
 import { Link } from "react-router-dom";
 export const All = () => {
+  const portfolioDetails = [
+
+    {
+      id: 2,
+      img: "/566.png",
+      name: "SwiftPulse",
+      year: "2024",
+    },
+    {
+      id: 3,
+      img: "/ccc.png",
+      name: "QiblaQuest App",
+      year: "2024",
+    },
+    {
+      id: 4,
+      img: "/ddd.jpg",
+      name: "ExpressEcho App",
+      year: "2024",
+    },
+    {
+      id: 5,
+      img: "/efv.png",
+      name: "Food App",
+      year: "2024",
+    },
+    {
+      id: 6,
+      img: "/energy app.jpg",
+      name: "Boli App",
+      year: "2024",
+    },
+    {
+      id: 7,
+      img: "/food.jpg",
+      name: "SavoryDelish App",
+      year: "2024",
+    },
+    {
+      id: 8,
+      img: "/food app.jpg",
+      name: "SavoryDelish App",
+      year: "2024",
+    },
+    {
+      id: 9,
+      img: "/Free_Iphone_13_Pro_Mockup_2.jpg",
+      name: "Car Chaser App",
+      year: "2024",
+    },
+    {
+      id: 10,
+      img: "/Free_IphonMocku.jpg",
+      name: "CraveCrafter App",
+      year: "2024",
+    },
+    {
+      id: 11,
+      img: "/llll.png",
+      name: "HeartSync App",
+      year: "2024",
+    },
+    {
+      id: 12,
+      img: "/Mockupsf.png",
+      name: "WorkWave App",
+      year: "2024",
+    },
+    {
+      id: 13,
+      img: "/12.png",
+      name: "WorkWave App",
+      year: "2024",
+    },
+    {
+      id: 14,
+      img: "/ohn.png",
+      name: "VideHope App",
+      year: "2024",
+    },
+
+    {
+      id: 16,
+      img: "/qqqq.jpg",
+      name: "Crime Scene App",
+      year: "2024",
+    },
+    {
+      id: 17,
+      img: "/rr.png",
+      name: "RomanceRealm App",
+      year: "2024",
+    },
+    {
+      id: 18,
+      img: "/vb.png",
+      name: "Sardpara App",
+      year: "2024",
+    },
+    {
+      id: 19,
+      img: "/ww.jpg",
+      name: "ScholarEase App",
+      year: "2024",
+    },
+   
+  ];
   return (
     <>
       <Container>
         <Row style={{ marginTop: "120px" }}>
-          <Col>
-            <Link to="/PORTFOLIO/detailpage">
-              <PortfolioCard portfolioimg={Mobile} />
-            </Link>
-          </Col>
-          <Col style={{ marginTop: "50px" }}>
-            <PortfolioCard portfolioimg={Mobile1} />
-          </Col>
-          <Col>
-            <PortfolioCard portfolioimg={Mobile2} />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <PortfolioCard portfolioimg={Mobile3} />
-          </Col>
-          <Col style={{ marginTop: "50px" }}>
-            <PortfolioCard portfolioimg={Mobile4} />
-          </Col>
-          <Col>
-            <PortfolioCard portfolioimg={Mobile5} />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <PortfolioCard portfolioimg={Mobile6} />
-          </Col>
-          <Col style={{ marginTop: "50px" }}>
-            <PortfolioCard portfolioimg={Mobile7} />
-          </Col>
-          <Col>
-            <PortfolioCard portfolioimg={Mobile8} />
-          </Col>
+        {portfolioDetails.map((item) => (
+            <Col key={item.id} md={4} className="m-auto" style={{ marginTop: ""  ,width:'320px ' }}>
+          
+                <PortfolioCard
+                  id={item.id}
+                  img={item.img}
+                  name={item.name}
+                  year={item.year}
+                />
+   
+            </Col>
+          ))}
+       
         </Row>
       </Container>
     </>

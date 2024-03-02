@@ -4,7 +4,7 @@ svg {
 
 .teamcard {
   position: relative;
-  width: 250px; /* Set the width you want */
+  width: auto; /* Set the width you want */
   height: 400px; /* Set the height you want */
   z-index: +5;
 }
