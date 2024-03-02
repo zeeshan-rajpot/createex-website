@@ -1,0 +1,71 @@
+.bg-image {
+  background-image: url("../../SVG/Component\ 11\ –\ 1.svg");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  background-position: center center;
+ 
+}
+
+.Contactus {
+  flex: 1; /* Allow the form to take up remaining space */
+}
+
+/*
+
+.input {
+  background-color: #707c7f;
+  color: #000;
+  border: transparent;
+  font-family: "Poppins";
+  font-size: 0.8em;
+  border-radius: 22px;
+  width: 80%;
+  padding: 10px 20px 10px 20px;
+  min-height: 8%;
+  &::placeholder {
+    color: #fff;
+    text-align: left;
+  }
+}
+.input:active {
+  background-color: none;
+  border: transparent;
+}
+.Messageinput {
+  background-color: #707c7f;
+  color: #000;
+  border: transparent;
+  border-radius: 22px;
+  width: 80%;
+  font-family: "Poppins";
+  font-size: 12px;
+  height: 30%;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  &::placeholder {
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    white-space: nowrap;
+  }
+}
+.Contactus {
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.281);
+  opacity: 0.7;
+  text-align: center;
+  border: 1px solid #72b63c;
+}
+.send-btn {
+  background-color: #72b63c;
+  color: #fff;
+  width: 40%;
+  height: 40px;
+  font-size: 21px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 22px;
+} */

@@ -1,0 +1,8 @@
+.GradientBackGroundHero {
+  background: linear-gradient(
+    to top,
+    rgba(175, 204, 222, 0.3),
+    rgba(255, 255, 255, 0.8)
+  );
+}
+

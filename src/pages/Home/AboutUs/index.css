@@ -1,0 +1,27 @@
+.AboutBgImage::before {
+  content: "";
+  background-image: url("../../../SVG/AboutUsSideImage.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -50px;
+  width: 70%;
+  height: 80%;
+  z-index: -1;
+}
+.AboutBgImage {
+  position: relative;
+}
+
+@media screen and (min-width: 1380px) {
+  .AboutsideImage {
+    width: 100%;
+    height: 100%;
+  }
+  .AboutBgImage {
+    margin-top: 10% !important;
+  }
+  .LMAboutUs {
+    margin-top: 100px !important;
+    width: 30% !important;
+  }
+}

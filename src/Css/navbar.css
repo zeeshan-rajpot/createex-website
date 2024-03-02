@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainnavbar {
+  background: linear-gradient(to right, rgb(225, 244, 248), #ffffff);
+}
+.mainnavbar::before {
+  content: "";
+  background-image: url("../SVG/Group\ 3277.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0; /* Adjust this value as needed */
+  right: 28rem; /* Position the background image to the left */
+  width: 31vw; /* Ensure the background covers the entire width */
+  height: 36vw; /* Ensure the background covers the entire height */
+  z-index: -5;
+}
+
+.logo {
+  padding-left: 3rem;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-elements {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: "Poppins";
+  padding-right: 8rem;
+}
+
+.nav-elements ul li a {
+  font-size: 10px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+}
+.nav-elements ul li a.activeLink {
+  color: #72b63c;
+}
+.btn-submit {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.mainnavbar {
+  height: 60px;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.mainnavbar {
+  --bs-navbar-padding-y: 1.7rem !important;
+}
+.logo {
+  margin-top: 30px !important;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+  margin-top: 30px !important;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 40px;
+  color: #72b63c;
+}
+
+.active {
+  color: #72b63c;
+}
+
+/*------------------------- Button Design ------------------------- */
+.btn-submit {
+  background-color: rgba(114, 182, 60, 0.78);
+  color: #fff;
+  border-radius: 17px;
+  border: transparent;
+  font-size: 12px;
+  padding: 5px 15px 5px 15px;
+}
+/*------------------------- Responsive Design ------------------------- */
+
+@media (min-width: 1380px) {
+  .nav-elements {
+    margin-top: 30px !important;
+  }
+  .logo {
+    margin-top: 30px !important;
+  }
+
+  .nav-elements ul a {
+    font-size: 0.7vw !important;
+    font-weight: 400;
+    margin: 10px !important;
+  }
+  .btn-submit {
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block !important;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: -184px  !important;
+    top: 80px;
+    background-color: #fff;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    z-index: 5;
+  }
+
+  .nav-elements.active {
+    width: 540px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+  .logo {
+    margin-left: 0% !important;
+  }
+}
